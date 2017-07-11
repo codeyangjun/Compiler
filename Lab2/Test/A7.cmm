@@ -1,0 +1,13 @@
+struct List{
+	int name;
+	int list[10];
+};
+int main(){
+	struct List a, b, c;
+	int i, N =10;
+	while(i < N){
+		a.list[i] = b.list+c.list[i];
+		i = i + 1;
+	}
+	return 0;
+}

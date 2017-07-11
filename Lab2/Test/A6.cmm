@@ -1,0 +1,13 @@
+int cube (int n){
+	return n * n * n;
+}
+
+int main()
+{
+	int a = 100, b = 4;
+	if(a < cube(b))
+		a = cube(b);
+	else
+		cube(b) = a;
+	return a;
+}

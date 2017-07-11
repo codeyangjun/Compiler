@@ -1,0 +1,17 @@
+struct _price {
+	float a, b;
+};
+
+struct _product {
+	float x, y;
+	struct _price price;
+};
+
+int main()
+{
+	struct _product v1, v2;
+	float p,q;
+	p = v1.x + v1.y * v1.price.a;
+	q = v2.x + v2.y * v2.b * v2.price.b;
+	return 0;
+}

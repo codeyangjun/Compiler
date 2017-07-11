@@ -1,0 +1,28 @@
+int bbSort(int n)
+{
+	int exchange;
+	int i, j, temp;
+	int p[50];
+	while(i < n)
+	{
+		i = i + 1;
+		exchange = 1;
+
+		while(j < n)
+		{
+			j = j + 1;
+			if(p[j] > p[j+1])
+			{
+				temp = p[j+1];
+				p[j+1] = p[j];
+				p[j] = temp;
+				exchange = 0;
+			}
+
+		}
+		if(exchange() == 0)
+			p[i] = -1;
+
+	}
+	return 0;
+}

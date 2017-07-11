@@ -1,0 +1,18 @@
+int print(int m, int n)
+{
+	write(m);
+	write(n);
+	write(m+n);
+	write(m-n);
+	return 0;
+}
+
+int main()
+{
+	int i, j;
+	i = read();
+	j = read();
+	print(i,j);
+	
+	return 0;
+}

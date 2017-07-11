@@ -1,0 +1,15 @@
+struct Vector{
+	float x;
+	float y;
+	float list[5];
+};
+struct Vector structMutipleFunction(struct Vector A, struct Vector B){
+	struct Vector result;
+	int i, N =5;
+	result.x = A.x + B.x;
+	result.y = A.y + B.y;
+	while(i < N){
+		result.list[i] = A.list[i] + B.list[i];
+	}
+	return result.list;
+}

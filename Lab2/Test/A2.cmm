@@ -1,0 +1,8 @@
+int compare(int m, int n){
+	int m1, n1;
+	if(m < 0)
+		m1 = -m;
+	if(n < 0)
+		n1 = -n;
+	return compareP(m1, n1);
+}

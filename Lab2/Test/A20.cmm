@@ -1,0 +1,16 @@
+struct Food {
+	int price;
+	float weight;
+}food;
+
+int main()
+{
+	int a[10];
+	int temp = 20;
+	struct Food food2;
+	food2.price = 25;
+	food2.weight = 0.5;
+	food.price = temp;
+	food = a + food2;
+	return 0;
+}

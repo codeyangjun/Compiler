@@ -1,0 +1,199 @@
+本组测试用例共 20 个
+测试用例 1-17 分别对应语义错误 1-17
+之后三个测试用例对应于语义错误 15,9,7
+
+每个用例仅在其中一行含有语义错误
+某些语义错误可能会产生连锁反应
+测试用例 A-i 对应的“本质错误”的错误类型是必须报出来的,如果报出其他错误
+只要是由本质错误连带引发的（包括但不限于下面明确给出的情况），我们都不会扣分。
+
+错误编号和行号之后的说明文字不要求与给出的输出完全一致
+
+
+A-1
+Error type 1 at Line 10: Undefined variable "z1".
+	
+
+A-2
+Error type 2 at Line 7: Undefined function "compareP".
+Error type 8 at Line 7:Type mismatched for return.
+	
+
+A-3有错误
+Error type 16 at Line 8: Duplicated name "Product".
+Error type 5 at Line 12: Type mismatched for assignment.
+正确结果
+Error type 3 at line 8: Redefined variable "Product"
+	
+
+A-4
+Error type 4 at Line 5: Redefined function "math_calculator".
+Error type 9 at Line 11: Params wrong in function "math_calculator".
+Error type 8 at Line 11:Type mismatched for return.
+
+
+A-5
+Error type 5 at Line 15: Type mismatched for assignment.
+
+
+A-6错误 - 程序报错 core dumped
+Error type 9 at Line 8: Params wrong in function "cube".
+Segmentation fault (core dumped)
+正确结果
+Error type 6 at line 11: The left-hand side of an assignment must be a variable
+
+
+A-7
+Error type 7 at Line 9: Type mismatched for operands.
+
+
+A-8
+Error type 8 at Line 14:Type mismatched for return.
+
+
+A-9错误
+Error type B at line 16: missing '}'
+正确结果
+Error type 9 at line 38: The method "split" is not applicable for the arguments
+
+
+A-10错误
+Error type 7 at Line 9: Type mismatched for operands.
+Error type 5 at Line 10: Type mismatched for assignment.
+正确结果
+Error type 10 at line 10: Illegal use of "[]"
+
+
+A-11错误
+Error type 9 at Line 14:Only type INT could be used for judgement.
+Error type 5 at Line 16: Type mismatched for assignment.
+Error type 5 at Line 18: Type mismatched for assignment.
+Error type 11 at Line 23: "exchange" is not a function.
+Error type 5 at Line 24: Type mismatched for assignment.
+正确结果
+Error type 11 at line 22: "exchange" must be a function
+
+
+A-12错误
+Error type 5 at Line 7: Type mismatched for assignment.
+Error type 7 at Line 12: Type mismatched for operands.
+Error type 12 at Line 13: there is not a integer between "[" and "]".
+正确结果
+Error type 12 at line 13: Array argument is not an integer
+
+
+A-13错误
+无输出
+正确结果
+Error type 13 at line 14: Illegal use of "."
+
+
+A-14
+Error type 14 at Line 15: Non-existent field "b"
+
+
+A-15
+Error type 15 at Line 11: Variable "weight1" in struct is initialized.
+
+
+A-16
+Error type 16 at Line 9: Duplicated name "Price".
+
+
+A-17
+Error type 17 at Line 15: Undefined structure "Food2".
+
+
+A-18
+Error type 15 at Line 4: Redefined field "price".
+
+
+A-19
+Error type 9 at Line 17: Params wrong in function "set_Item".
+
+
+A-20
+Error type 7 at Line 14: Type mismatched for operands.
+
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+B-1
+Error type 14 at Line 18: Non-existent field "date_frm".
+Error type 17 at Line 23: Undefined structure "saleList".
+Error type 8 at Line 31:Type mismatched for return.
+Error type 7 at Line 39: Type mismatched for operands.
+Error type 9 at Line 49: Params wrong in function "set_ProductSingle".
+Error type 9 at Line 49: Params wrong in function "set_SalesList".
+Error type 9 at Line 49: Params wrong in function "calculateAll".
+Error type 9 at Line 50: Params wrong in function "calculateAll".
+
+
+B-2错误 - 程序报错 core dumped
+Error type 15 at Line 7: Variable "price_sum" in struct is initialized.
+Error type 17 at Line 11: Undefined structure "Summ".
+Error type 13 at Line 18: Illegal use of ".".
+Segmentation fault (core dumped)
+正确结果
+Error type 15 at Line 7: Initialized variable "price_sum" in struct
+Error type 17 at Line 11: Undefined structure "Summ"
+Error type 10 at Line 19: "j" is not an array
+Error type 1 at Line 26: Undefined variable "sum_result1"
+
+
+C-1错误
+Error type 7 at Line 39: Type mismatched for operands.
+Error type 9 at Line 49: Params wrong in function "set_ProductSingle".
+Error type 9 at Line 49: Params wrong in function "set_SalesList".
+Error type 9 at Line 49: Params wrong in function "calculateAll".
+Error type 9 at Line 50: Params wrong in function "calculateAll".
+正确结果
+什么都不输出
+
+
+C-2错误
+Error type 13 at Line 18: Illegal use of ".".
+Segmentation fault (core dumped)
+正确结果
+什么都不输出
+
+
+D-1
+Error type B at line 16: Syntax error, near '}'
+Error type B at line 21: Syntax error, near '}'
+
+
+D-2
+Error type 5 at Line 11: Type mismatched for assignment.
+Error type 3 at Line 22: Redefined variable "result".
+Error type 3 at Line 28: Redefined variable "result".
+Error type 3 at Line 37: Redefined variable "i".
+Error type 9 at Line 38: Params wrong in function "initial_Node".
+Error type 9 at Line 39: Params wrong in function "initial_Node".
+Error type 9 at Line 40: Params wrong in function "link_Node".
+Error type 9 at Line 42: Params wrong in function "initial_Node".
+Error type 9 at Line 47: Params wrong in function "link_Node".
+
+
+D-3
+正确
+
+
+E-3
+Error type 5 at Line 41: Type mismatched for assignment.
+Error type 5 at Line 43: Type mismatched for assignment.
+
+
+
+
+
+
+
+
+
+
+
+
+

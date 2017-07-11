@@ -1,0 +1,14 @@
+FUNCTION main : 
+a := #3
+b := #0
+READ t1
+b := t1
+IF a > b GOTO label1
+GOTO label2
+LABEL label1 : 
+WRITE a
+GOTO label3
+LABEL label2 : 
+WRITE b
+LABEL label3 : 
+RETURN #0

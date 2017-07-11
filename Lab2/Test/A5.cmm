@@ -1,0 +1,18 @@
+struct Product {
+	int name;
+	int weight;
+	float price;
+};
+struct ProductB {
+	int nameB;
+	float weightB;
+	float priceB;
+};
+int main(){
+	struct Product a;
+	struct ProductB b;
+	a.name = b.nameB;
+	a.weight = b.weightB;
+	a.price = b.priceB;
+	return 0;
+}
